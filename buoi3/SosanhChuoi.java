@@ -10,12 +10,12 @@ public class SosanhChuoi {
 		String st1 = input.nextLine();
 		System.out.println("Nhap vao chuoi 2:");
 		String st2 = input.nextLine();
-		int t = st2.indexOf(st1);
-		if (t ==-1) {
-			System.out.println(st2 + " khong la cuoi con cua " + st1);
+		int check = st1.indexOf(st2);
+		if (t >= 0) {
+			System.out.println(" chuoi 2 la substring cua chuoi 1");
 
 		} else {
-			System.out.println(st2 + " la chuoi con cua " + st1);
+			System.out.println("chuoi 2 khong phai la substring cua chuoi 1");
 		}
 
 	}
